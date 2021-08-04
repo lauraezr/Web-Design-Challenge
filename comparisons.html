@@ -1,17 +1,101 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Comparisons</title> 
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <title>Comparisons</title> 
+        <link rel = "stylesheet" type="text/css", href="style.css">
+        <link rel = "stylesheet" type="text/css", href="reset.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
 
 <body>
-      
-  
+
+  <div class="container">
+
+    <ul class="nav nav-pills">
+        <p><header>Latitude</header></p>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comparisons.html">Comparisons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+    </ul>
 
 
+    <article>
+        <p><h1>Comparison: Latitude vs X</h1></p>
+    </article>
 
+
+  <!-- <section> -->
+    <!-- <h1>WeatherPy</h1>
+    <article>
+    <a target="_blank" href="assets/images/cloudymap.png">
+      <img src="assets/images/cloudymap.png" alt="Cloudy Map">
+    </a>
+    <p><em>Cloudy Map</em></p>
+    </article>
+    <hr>
+    <article>
+    <a target="_blank" href="assets/images/humiditymap.png">
+    <img src="assets/images/humiditymap.png" alt="Humidity Map">
+    </a>
+    <p><em>Humidity Map</em></p>
+    </article>
+    <hr>
+    <article>
+      <a href="assets/images/temperaturemap.png">
+      <img target="_blank" src="assets/images/temperaturemap.png" alt="Tempurature Map">
+      </a>
+      <p><em>Temperature Map</em></p>
+    </article>
+    <hr> -->
+    <!-- an example using figure/ficaption -->
+  <!-- <figure>
+      <img src="assets/images/windmap.png" class="rounded float-left" alt="Wind Map">
+      <figcaption><em>Wind Map</em></figcaption>
+  </figure>
+  </section> -->
+
+  <p>Click any plot to get an in-depth analysis.</p>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>vs. Max Temperature</h2>
+        <img src="assets/LATvsTEMPplot.png" class="rounded float-left" alt="Wind Map" width="200">
+      </div>
+      <div class="col">
+        <h2>vs. Humidity</h2>
+        <img src="assets/LATvsHUMplot.png" class="rounded float-left" alt="Wind Map" width="200">
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-34">
+        <h2>vs. Cloudiness</h2>
+        <img src="assets/LATvsCLOUDplot.png" class="rounded float-left" alt="Wind Map" width="200">
+        </div>
+        <div class="col">
+        <h2>vs. Wind Speed</h2>
+        <img src="assets/LATvsWINDplot.png" class="rounded float-left" alt="Wind Map" width="200">
+        </div>
+    </div>
+  </div>
+
+</div>
 </body>
 
 </html>
