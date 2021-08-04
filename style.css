@@ -44,6 +44,19 @@ h2 {
 
   }
 
+h3 {
+    text-align: left;
+    font-size: 32px;
+    color: rgb(40, 164, 123);
+    /* Bold the text. */
+    font-weight: bold;
+    margin-left: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom:30px;
+    padding-top: 15px;
+
+  } 
+
 
 p {
     text-align: left;
@@ -54,7 +67,7 @@ p {
     /* Bold the text. */
   }
 
-  .center {
+.center {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -63,48 +76,103 @@ p {
     padding-bottom: 15px;
   }
 
+.nav nav-pills {
+  position: absolute; /* Position them relative to the browser window */
+
+}
+
 .nav-link {
     color: #555;
-    align-items: flex-end;
+    
 }
 
 .nav-item {
-    color: #555;
-    align-items: flex-end;
+   
+    float: right;
 }
 
-/* .dropdown-menu {
-  visibility: hidden; */
-/* } */
-
-/* #content {
-    display: flex;
-  
-    justify-content: space-around;
-    flex-flow: row wrap;
-    align-items: stretch;
-  }
-  
-.box {
-    flex-grow: 1;
-    border: 3px solid rgba(0,0,0,.2);
-  }
-  
-.box1 {
-    flex-grow: 2;
-    border: 3px solid rgba(0,0,0,.2);
-  } */
 
 
-/* @media (max-width: 720px) { */
-    /* .col-12 {
-        border: 1px solid red;
-      }
-      
-    .col-34 {
-        border: 1px solid blue;
-      } */
 
-    /* .dropdown-menu {
-      visibility: visible;
-    } */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 40%;
+  padding: 0 4px;
+  padding-bottom: 15px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.col-2 {
+  flex: 25%;
+  max-width: 40%;
+  padding: 0 4px;
+  padding-bottom: 15px;
+}
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -100px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 150px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#maxtemp {
+  background-color: #04AA6D;
+  top: 100px;
+}
+
+#humidity {
+  top: 200px;
+  background-color: cadetblue; 
+}
+
+#cloudiness {
+  top: 300px;
+  background-color: aquamarine; 
+}
+
+#windspeed {
+  top: 400px;
+  background-color: aqua; 
+}
+
+
+
+
+@media (max-width: 720px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+    }
+
+  .column {
+    flex: 100%;
+    max-width: 100%;}
