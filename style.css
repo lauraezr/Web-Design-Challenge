@@ -109,7 +109,11 @@ p {
 }
 
 
-
+.dataframe {
+  margin-left: 75px;
+  margin-right: 75px;
+  padding-right: 20px;
+}
 
 
 .row {
