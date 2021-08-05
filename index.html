@@ -5,50 +5,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>WeatherPy Website</title> 
+  <title>WeatherPy Website</title>
 
-  <link rel = "stylesheet" type="text/css", href="style.css">
-  <link rel = "stylesheet" type="text/css", href="reset.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" , href="style.css">
+  <link rel="stylesheet" type="text/css" , href="reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 
 
 <body>
 
+  <nav class="navbar navbar-expand-md md-light navbar-light" id="my-navbar">
 
-  <div class="container">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://lauraezr.github.io/Web-Design-Challenge/index.html">
+        <p>
+          <header>Latitude
+      </a></header>
+      </p></a>
 
-    <nav class="navbar navbar-expand-md md-light navbar-light" id="my-navbar">
-      <a class="navbar-brand" href="https://lauraezr.github.io/Web-Design-Challenge/index.html" style="float: inline-start;"><p><header>Latitude</a></header></p></a>
-
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
 
-         <ul class="navbar-nav nav-pills">
-              <li class="navbar-nav">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbardrop">Plots</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="https://lauraezr.github.io/Web-Design-Challenge/maxtemp.html">Max Temperature</a>
-                  <a class="dropdown-item" href="https://lauraezr.github.io/Web-Design-Challenge/humidity.html">Humidity</a>
-                  <a class="dropdown-item" href="https://lauraezr.github.io/Web-Design-Challenge/cloudiness.html">Cloudiness</a>
-                  <a class="dropdown-item" href="https://lauraezr.github.io/Web-Design-Challenge/windspeed.html">Wind Speed</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="https://lauraezr.github.io/Web-Design-Challenge/comparisons.html">Comparisons</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="https://lauraezr.github.io/Web-Design-Challenge/data.html">Data</a>
-              </li>
-         </ul>         
-
+        <ul class="nav navbar-right navbar-nav nav-pills">
+          <li class="navbar-nav">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbardrop">Plots</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="https://lauraezr.github.io/Web-Design-Challenge/maxtemp.html">Max
+                Temperature</a>
+              <a class="dropdown-item" href="https://lauraezr.github.io/Web-Design-Challenge/humidity.html">Humidity</a>
+              <a class="dropdown-item"
+                href="https://lauraezr.github.io/Web-Design-Challenge/cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="https://lauraezr.github.io/Web-Design-Challenge/windspeed.html">Wind
+                Speed</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://lauraezr.github.io/Web-Design-Challenge/comparisons.html">Comparisons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://lauraezr.github.io/Web-Design-Challenge/data.html">Data</a>
+          </li>
+        </ul>
       </div><!-- Navbar Header -->
+    </div>
+  </nav><!-- End Navbar -->
 
-    </nav><!-- End Navbar -->
+
 
 
 
@@ -60,72 +68,86 @@
     <a href="https://lauraezr.github.io/Web-Design-Challenge/windspeed.html" id="windspeed">Windspeed</a>
   </div>
 
-  </div><!-- End Container -->  
-
-    <article>
-      <p><h1>Summary</h1></p>
-    </article>
-
-
-      <img style="float: left; margin: 15px 100px 0px;" src="assets/LATvsCLOUDplot.png" width="200" />
-
-      <p>The purpose of this project was to analyze how weather changes as you get closer to the equator.
-        To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-  
-      <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
-        Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualitzations created
-        as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-      </p>
+  <article>
+    <p>
+    <h1>Summary</h1>
+    </p>
+  </article>
 
 
+  <img style="float: left; margin: 15px 100px 0px;" src="assets/LATvsCLOUDplot.png" width="200" />
 
+  <p>The purpose of this project was to analyze how weather changes as you get closer to the equator.
+    To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500
+    cities.</p>
 
+  <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+    Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data
+    and visualitzations created
+    as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+  </p>
 
 
 
-              <article>
-                <p><h2>Visualizations</h2></p>
-              </article>
-
-              <div class="container">
-                <div class="row">
-                  <div class="column">
-                    <h3>vs. Max Temp</h3>
-                    <a href="https://lauraezr.github.io/Web-Design-Challenge/maxtemp.html">
-                      <img style="float: left; margin: 15px 15px 0px;" src="assets/LATvsTEMPplot.png"  alt="https://lauraezr.github.io/Web-Design-Challenge/maxtemp.html" width="200"/>
-                    </a>
-                  </div>
-                  <div class="column">
-                    <h3>vs. Humidity</h3>
-                    <a href="https://lauraezr.github.io/Web-Design-Challenge/humidity.html">
-                      <img style="float: left; margin: 15px 15px 0px;" src="assets/LATvsHUMplot.png" alt="https://lauraezr.github.io/Web-Design-Challenge/humidity.html" width="200"/>
-                    </a>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column">
-                    <h3>vs. Cloudiness</h3>
-                    <a href="https://lauraezr.github.io/Web-Design-Challenge/cloudiness.html">
-                      <img style="float: left; margin: 15px 15px 0px;" src="assets/LATvsCLOUDplot.png" alt="https://lauraezr.github.io/Web-Design-Challenge/cloudiness.html" width="200"/>
-                    </a>
-                  </div>
-                  <div class="column">
-                    <h3>vs. Wind Speed</h3>
-                    <a href="https://lauraezr.github.io/Web-Design-Challenge/windspeed.html">
-                      <img style="float: left; margin: 15px 15px 0px;" src="assets/LATvsWINDplot.png" alt="https://lauraezr.github.io/Web-Design-Challenge/windspeed.html" width="200"/>
-                    </a>
-                  </div>
-                </div>
-              </div>
 
 
-            
+
+
+  <article>
+    <p>
+    <h2>Visualizations</h2>
+    </p>
+  </article>
+
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <h3>vs. Max Temp</h3>
+        <a href="https://lauraezr.github.io/Web-Design-Challenge/maxtemp.html">
+          <img style="float: left; margin: 15px 15px 0px;" src="assets/LATvsTEMPplot.png"
+            alt="https://lauraezr.github.io/Web-Design-Challenge/maxtemp.html" width="200" />
+        </a>
+      </div>
+      <div class="column">
+        <h3>vs. Humidity</h3>
+        <a href="https://lauraezr.github.io/Web-Design-Challenge/humidity.html">
+          <img style="float: left; margin: 15px 15px 0px;" src="assets/LATvsHUMplot.png"
+            alt="https://lauraezr.github.io/Web-Design-Challenge/humidity.html" width="200" />
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h3>vs. Cloudiness</h3>
+        <a href="https://lauraezr.github.io/Web-Design-Challenge/cloudiness.html">
+          <img style="float: left; margin: 15px 15px 0px;" src="assets/LATvsCLOUDplot.png"
+            alt="https://lauraezr.github.io/Web-Design-Challenge/cloudiness.html" width="200" />
+        </a>
+      </div>
+      <div class="column">
+        <h3>vs. Wind Speed</h3>
+        <a href="https://lauraezr.github.io/Web-Design-Challenge/windspeed.html">
+          <img style="float: left; margin: 15px 15px 0px;" src="assets/LATvsWINDplot.png"
+            alt="https://lauraezr.github.io/Web-Design-Challenge/windspeed.html" width="200" />
+        </a>
+      </div>
+    </div>
   </div>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
 </body>
 

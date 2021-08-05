@@ -2,79 +2,94 @@
 <html lang="en-us">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Max Temp</title> 
-    <link rel = "stylesheet" type="text/css", href="style.css">
-    <link rel = "stylesheet" type="text/css", href="reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Max Temp</title>
+  <link rel="stylesheet" type="text/css" , href="style.css">
+  <link rel="stylesheet" type="text/css" , href="reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 
 
 <body>
 
-  <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
-    <div class="container">
-        <div class="navbar-header">
-          <a href="https://lauraezr.github.io/Web-Design-Challenge/index.html"><p><header>Latitude</a></header></p></a>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div><!-- Navbar Header -->
-        <div class="navbar-right">
-        <ul class="nav nav-pills">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+  <nav class="navbar navbar-expand-md md-light navbar-light" id="my-navbar">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://lauraezr.github.io/Web-Design-Challenge/index.html">
+        <p>
+          <header>Latitude
+      </a></header>
+      </p></a>
+
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+        <ul class="nav navbar-right navbar-nav nav-pills">
+          <li class="navbar-nav">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbardrop">Plots</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="https://lauraezr.github.io/Web-Design-Challenge/maxtemp.html">Max Temperature</a>
+              <a class="dropdown-item" href="https://lauraezr.github.io/Web-Design-Challenge/maxtemp.html">Max
+                Temperature</a>
               <a class="dropdown-item" href="https://lauraezr.github.io/Web-Design-Challenge/humidity.html">Humidity</a>
-              <a class="dropdown-item" href="https://lauraezr.github.io/Web-Design-Challenge/cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="https://lauraezr.github.io/Web-Design-Challenge/windspeed.html">Wind Speed</a>
+              <a class="dropdown-item"
+                href="https://lauraezr.github.io/Web-Design-Challenge/cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="https://lauraezr.github.io/Web-Design-Challenge/windspeed.html">Wind
+                Speed</a>
             </div>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="https://lauraezr.github.io/Web-Design-Challenge/comparisons.html">Comparisons</a>
+            <a class="nav-link" href="https://lauraezr.github.io/Web-Design-Challenge/comparisons.html">Comparisons</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="https://lauraezr.github.io/Web-Design-Challenge/data.html">Data</a>
+            <a class="nav-link" href="https://lauraezr.github.io/Web-Design-Challenge/data.html">Data</a>
           </li>
-         </ul>         
-        </div>
-    </div><!-- End Container -->
-</nav><!-- End Navbar -->
-
- 
-
-    <div id="mySidenav" class="sidenav">
-      <a href="https://lauraezr.github.io/Web-Design-Challenge/maxtemp.html" id="maxtemp">Max Temp</a>
-      <a href="https://lauraezr.github.io/Web-Design-Challenge/humidity.html" id="humidity">Humidity</a>
-      <a href="https://lauraezr.github.io/Web-Design-Challenge/cloudiness.html" id="cloudiness">Cloudiness</a>
-      <a href="https://lauraezr.github.io/Web-Design-Challenge/windspeed.html" id="windspeed">Windspeed</a>
+        </ul>
+      </div><!-- Navbar Header -->
     </div>
-    
+  </nav><!-- End Navbar -->
 
-     <article>
-       <h1>Max Temperature</h1>
-     </article>
 
-     <a href="https://lauraezr.github.io/Web-Design-Challenge/maxtemp.html">
-      <img  src="assets/LATvsTEMPplot.png"  alt="https://lauraezr.github.io/Web-Design-Challenge/maxtemp.html" class="center"/>
-    </a>
 
-    <article>
-      <p>As expected, the weather becomes significantly warmer as one approaches the equator. As shown in the image above, 
-        the climate is warmer between zero and 20 degrees of latitude. It's interesting to note that the warmest temperatures seen are not
+  <div id="mySidenav" class="sidenav">
+    <a href="https://lauraezr.github.io/Web-Design-Challenge/maxtemp.html" id="maxtemp">Max Temp</a>
+    <a href="https://lauraezr.github.io/Web-Design-Challenge/humidity.html" id="humidity">Humidity</a>
+    <a href="https://lauraezr.github.io/Web-Design-Challenge/cloudiness.html" id="cloudiness">Cloudiness</a>
+    <a href="https://lauraezr.github.io/Web-Design-Challenge/windspeed.html" id="windspeed">Windspeed</a>
+  </div>
+
+
+  <article>
+    <h1>Max Temperature</h1>
+  </article>
+
+  <a href="https://lauraezr.github.io/Web-Design-Challenge/maxtemp.html">
+    <img src="assets/LATvsTEMPplot.png" alt="https://lauraezr.github.io/Web-Design-Challenge/maxtemp.html"
+      class="center" />
+  </a>
+
+  <article>
+    <p>As expected, the weather becomes significantly warmer as one approaches the equator. As shown in the image above,
+      the climate is warmer between zero and 20 degrees of latitude. It's interesting to note that the warmest
+      temperatures seen are not
       necessarily exactly in the equator but rather, a few degrees north.</p>
-    </article>
+  </article>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
 </body>
 
