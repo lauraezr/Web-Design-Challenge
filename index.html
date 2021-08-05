@@ -17,38 +17,40 @@
 <body>
 
 
-  <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
-    <div class="container">
-        <div class="navbar-header">
-          <a href="https://lauraezr.github.io/Web-Design-Challenge/index.html"><p><header>Latitude</a></header></p></a>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+  <div class="container">
+
+    <nav class="navbar navbar-expand-md md-light navbar-light" id="my-navbar">
+      <a class="navbar-brand" href="https://lauraezr.github.io/Web-Design-Challenge/index.html" style="float: inline-start;"><p><header>Latitude</a></header></p></a>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
             </button>
-        </div><!-- Navbar Header -->
-        <div class="navbar-right">
-        <ul class="nav nav-pills">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="https://lauraezr.github.io/Web-Design-Challenge/maxtemp.html">Max Temperature</a>
-              <a class="dropdown-item" href="https://lauraezr.github.io/Web-Design-Challenge/humidity.html">Humidity</a>
-              <a class="dropdown-item" href="https://lauraezr.github.io/Web-Design-Challenge/cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="https://lauraezr.github.io/Web-Design-Challenge/windspeed.html">Wind Speed</a>
-            </div>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="https://lauraezr.github.io/Web-Design-Challenge/comparisons.html">Comparisons</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="https://lauraezr.github.io/Web-Design-Challenge/data.html">Data</a>
-          </li>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+         <ul class="navbar-nav nav-pills">
+              <li class="navbar-nav">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbardrop">Plots</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="https://lauraezr.github.io/Web-Design-Challenge/maxtemp.html">Max Temperature</a>
+                  <a class="dropdown-item" href="https://lauraezr.github.io/Web-Design-Challenge/humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="https://lauraezr.github.io/Web-Design-Challenge/cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="https://lauraezr.github.io/Web-Design-Challenge/windspeed.html">Wind Speed</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="https://lauraezr.github.io/Web-Design-Challenge/comparisons.html">Comparisons</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="https://lauraezr.github.io/Web-Design-Challenge/data.html">Data</a>
+              </li>
          </ul>         
-        </div>
-    </div><!-- End Container -->
-</nav><!-- End Navbar -->
+
+      </div><!-- Navbar Header -->
+
+    </nav><!-- End Navbar -->
+
+
 
 
   <div id="mySidenav" class="sidenav">
@@ -58,6 +60,7 @@
     <a href="https://lauraezr.github.io/Web-Design-Challenge/windspeed.html" id="windspeed">Windspeed</a>
   </div>
 
+  </div><!-- End Container -->  
 
     <article>
       <p><h1>Summary</h1></p>
